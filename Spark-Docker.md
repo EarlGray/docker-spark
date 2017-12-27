@@ -65,6 +65,10 @@ Spark може запускатись у самостійному режимі [
 
 ### 1. Встановіть і запустіть Docker CE (Community Edition)
 
+Інсталятори Docker доступні тут: [https://www.docker.com/community-edition#/download](). Будьте уважні із версіями: у репозиторіях Debian/Ubuntu є пакунок `docker.io`, але він дуже старої версії, налаштуйте [репозиторії Докера](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/).
+
+Способи встановити docker-compose: [https://docs.docker.com/compose/install/](). Під лінуксом краще встановлювати його із pip, версія в репозиторії дистрибутиву може бути застарілою.
+
 Приклад, Docker for Mac (лінукс-версія не має графічного інтерфейсу):
 ![Docker for Mac](img/docker-for-mac.png)
 
