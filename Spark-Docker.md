@@ -90,6 +90,14 @@ Server:
  Experimental: true
 ```
 
+Якщо ви замість інформації про сервер отримали помилку `Got permission denied while trying to connect to the Docker daemon socket ...` значить ваш користувач не має прав для доступу до докера. Можете викорувати команди з sudo, або додати свого користувача в групу `docker`:
+
+```
+$ sudo usermod -a -G docker $USER
+```
+
+Після чого треба перелогінитись (`sudo su $USER`), і проблема з доступом має вирішитись. 
+
 ### 2. Стягніть образ [gettyimages/spark](https://hub.docker.com/r/gettyimages/spark)
 
 Стягніть [pull] цей Docker-образ із Докерхаба: https://hub.docker.com/r/gettyimages/spark/ (Dockerfile, скрипт для самостійного створення цього образу <a href="https://github.com/gettyimages/docker-spark/blob/master/Dockerfile">доступний на Github</a>):
