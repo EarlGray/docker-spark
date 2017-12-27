@@ -90,7 +90,7 @@ Server:
  Experimental: true
 ```
 
-Якщо ви замість інформації про сервер отримали помилку `Got permission denied while trying to connect to the Docker daemon socket ...` значить ваш користувач не має прав для доступу до докера. Можете викорувати команди з sudo, або додати свого користувача в групу `docker`:
+Якщо ви замість інформації про сервер отримали помилку `Got permission denied while trying to connect to the Docker daemon socket ...`, значить ваш користувач не має прав для керування контейнерами. Можете використовувати команди з sudo або додати свого користувача в групу `docker`:
 
 ```
 $ sudo usermod -a -G docker $USER
