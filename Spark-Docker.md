@@ -95,7 +95,7 @@ Server:
 Стягніть [pull] цей Docker-образ із Докерхаба: https://hub.docker.com/r/gettyimages/spark/ (Dockerfile, скрипт для самостійного створення цього образу <a href="https://github.com/gettyimages/docker-spark/blob/master/Dockerfile">доступний на Github</a>):
 
 ```
-$ docker pull gettyimages/docker-spark
+$ docker pull gettyimages/spark
 ```
 
 Після цього у списку локально доступних образів має з'явитись приблизно таке:
